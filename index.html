@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Magarita Grill</title>
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Raleway|Titillium+Web:900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+    <div id="container">
+        <header id="landing">
+            <nav id="nav" class="nav-transparent">
+                <a id="brand" href="#landing">Margarita Grill</a>
+                <div id="bars" onclick="toggleBurger(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <a class="navItem displayNone" href="#menu" onclick="setDisplayNone()">Menu</a>
+                <a class="navItem displayNone" href="#map" onclick="setDisplayNone()">Directions</a>
+                <a class="navItem displayNone" href="#hoursContainer" onclick="setDisplayNone()">Hours</a>
+                
+                
+            </nav>
+            <div id="landingText">
+                <h1 class = ".slideLeft" id="landingTitle">Margartia&nbsp;Grill</h1>
+                <h3 id="landingSubText">A Virginia Beach Mexican Restaraunt</h3>
+            </div>
+        </header>
+
+        <section id="hoursContainer" class="scroll">
+            <div id="hours">
+                <h1>Hours</h1>
+                <h3>Monday-Saturday</h3>
+                <p>11:30 am - 2 am</p>
+                <h3>Sunday</h3>
+                <p>12 pm - 10 pm</p>
+            </div>
+        </section>
+        <section id="map" class="scroll">
+            <h1>Our Location</h1>
+            <p>
+                2340 Virginia Beach Blvd <br>
+                Virginia Beach, VA 23454<br>
+                Phone number (757) 227-5890
+            </p>
+            <div class="map-responsive">
+                <div class="gmap_canvas"><iframe width="100%" height="auto" id="gmap_canvas" src="https://maps.google.com/maps?q=margarita%20grill&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div>
+            </div>
+        </section>
+
+        <section id="menu" class="scroll" class="clearfix">
+            <div id="menuHolder">
+                <h1 id="menuTitle">Menu</h1>
+
+                <div class="menuLeft">
+                    <div class="menuGroup">
+                        <h3 class="menuLabel">Appetizers</h3>
+                        <hr>
+                        <ul class="menuItems">
+                            <li>
+                                <p class="item">Chips with Pico De Gallo</p>
+                                <p class="price">$3</p>
+                            </li>
+                            <li>
+                                <p class="item">Chips with Guac</p>
+                                <p class="price">$5</p>
+                            </li>
+                            <li>
+                                <p class="item">Chips With Queso</p>
+                                <p class="price">$4</p>
+                            </li>
+                            <li>
+                                <p class="item">Tuna Bites</p>
+                                <p class="price">$9</p>
+                            </li>
+                            <li>
+                                <p class="item">Chicken Bites</p>
+                                <p class="price">$7</p>
+                            </li>
+                            <li>
+                                <p class="item">Margarita Bites</p>
+                                <p class="price">$4</p>
+                            </li>
+                            <li>
+                                <p class="item">Lumpia</p>
+                                <p class="price">$8</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menuGroup">
+                        <h3 class="menuLabel">Nachos</h3>
+                        <hr>
+                        <p class="menuDescription"> Your choice of shredded beef or grilled chicken. Served with melted
+                            cheese, queso, pinto beans,
+                            lettuce, tomato, pico, and sour cream add guacamole for $1</p>
+                        <ul>
+                            <li>
+                                <p class="item">Full Size -</p>
+                                <p class="price">$12</p>
+                            </li>
+                            <li>
+                                <p class="item">Half Size</p>
+                                <p class="price">$8</p>
+                            </li>
+                            <li>
+                                <p class="item">Personal Size</p>
+                                <p class="price">$5</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menuGroup">
+                        <h3 class="menuLabel">Quesadilla</h3>
+                        <hr>
+                        <p class="menuDescription"> served with sour cream and pico de gallo.</p>
+                        <ul>
+                            <li>
+                                <p class="item">Three Cheese</p>
+                                <p class="price">$7</p>
+                                <p class="description">Queso,Cheddar,Cajita</p>
+                            </li>
+                            <li>
+                                <p class="item">Chicken and Chorizo</p>
+                                <p class="price">$9</p>
+                                <p class="description">Mexican Sasuage</p>
+                            </li>
+                            <li>
+                                <p class="item">Rajas</p>
+                                <p class="price">$7.50</p>
+                                <p class="description">Roasted Peppers and Onions</p>
+                            </li>
+                            <li>
+                                <p class="item">Personal</p>
+                                <p class="price">$5</p>
+                                <p class="description">Your choice of Chicken and Raja or Bacon and chorizo</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menuGroup">
+                        <h3 class="menuLabel">Tacos</h3>
+                        <hr>
+                        <p class="menuDescription"> You tell me...flour,crunchy,or bowl
+                            Order any 3 tacos and make it a meal with rice and beans</p>
+                        <ul>
+                            <li>
+                                <p class="item">Shredded Beef</p>
+                                <p class="price">$3</p>
+                                <p class="description">escabeche and chipotle sauce</p>
+                            </li>
+                            <li>
+                                <p class="item">Grilled Chicken</p>
+                                <p class="price">$9</p>
+                                <p class="description">roasted peppers and queso blanco</p>
+                            </li>
+                            <li>
+                                <p class="item">Veggie</p>
+                                <p class="price">$3</p>
+                                <p class="description">roasted peppers, pintos, queso blanco</p>
+                            </li>
+                            <li>
+                                <p class="item">Faijta</p>
+                                <p class="price">$3</p>
+                                <p class="description">chicken/beef, peppers, onions and queso</p>
+                            </li>
+                            <li>
+                                <p class="item">Fried Chicken</p>
+                                <p class="price">$3.50</p>
+                                <p class="description">secret recipe, lettuce, pablano</p>
+                            </li>
+                            <li>
+                                <p class="item">Kabob</p>
+                                <p class="price">$3</p>
+                                <p class="description">chicken, zucchini, tomato, onions, jaleponos</p>
+                            </li>
+                            <li>
+                                <p class="item">Baja</p>
+                                <p class="price">$5</p>
+                                <p class="description">grilled or fried cabbage w/baja</p>
+                            </li>
+                            <li>
+                                <p class="item">Grilled Shrimp</p>
+                                <p class="price">$5</p>
+                                <p class="description">bacon,lettuce, w/guacamole</p>
+                            </li>
+                            <li>
+                                <p class="item">Kicken Shrimp</p>
+                                <p class="price">$4</p>
+                                <p class="description">corn,salsa,cabbage,chipotle</p>
+                            </li>
+                            <li>
+                                <p class="item">Blackened Ahi Tuna</p>
+                                <p class="price">$5</p>
+                                <p class="description">pintos w/pablano queso</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menuRight">
+                    <div class="menuGroup">
+                        <h3 class="menuLabel">Burritos</h3>
+                        <hr>
+                        <p class="menuDescription">Served in a bowl or gluten free on request.</p>
+                        <ul>
+                            <li>
+                                <p class="item">Shredded Beef</p>
+                                <p class="price">$8</p>
+                                <p class="description">served with beans,queso,corn salsa,roasted peppers and chipotle
+                                    sauce</p>
+                            </li>
+                            <li>
+                                <p class="item">Chicken</p>
+                                <p class="price">$8</p>
+                                <p class="description">served with beans, queso, corn salsa,roasted peppers and
+                                    chipotle
+                                    sauce</p>
+                            </li>
+                            <li>
+                                <p class="item">Veggie</p>
+                                <p class="price">$8</p>
+                                <p class="description">served with beans,tomato,corn salsa,roasted
+                                    peppers,onions,cilantro,queso and cotija</p>
+                            </li>
+                            <li>
+                                <p class="item">Bajito</p>
+                                <p class="price">$8</p>
+                                <p class="description">served with your choice of shredded beef or chicken with
+                                    lettuce,tomato,queso,<br>beans,onions,cilantro,and baja sauce.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menuGroup">
+                        <h3 class="menuLabel">Sides</h3>
+                        <hr>
+                        <ul>
+                            <li>
+                                <p class="item">Sour Cream</p>
+                                <p class="price">$0.50</p>
+                            </li>
+                            <li>
+                                <p class="item">Grilled Veggies</p>
+                                <p class="price">$3</p>
+                            </li>
+                            <li>
+                                <p class="item">Rice and Beans</p>
+                                <p class="price">$3</p>
+                            </li>
+                            <li>
+                                <p class="item">Beans</p>
+                                <p class="price">$3</p>
+                            </li>
+                            <li>
+                                <p class="item">Fries</p>
+                                <p class="price">$3</p>
+                            </li>
+                            <li>
+                                <p class="item">Queso Fries</p>
+                                <p class="price">$5</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menuGroup">
+                        <h3 class="menuLabel">Drinks</h3>
+                        <hr>
+                        <ul>
+                            <li>
+                                <p class="item">Pepsi Products</p>
+                                <p class="price">$2.25</p>
+                            </li>
+                            <li>
+                                <p class="item">Tea</p>
+                                <p class="price">$3</p>
+                            </li>
+                            <li>
+                                <p class="item">Coffee</p>
+                                <p class="price">$3</p>
+                            </li>
+                            <li>
+                                <p class="item">Red Bull</p>
+                                <p class="price">$4</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>
+                2340 Virginia Beach Blvd <br>
+                Virginia Beach, VA 23454<br>
+                Phone number (757) 227-5890
+            </p>
+            <img src="imgs/Logo2.png" />
+            <p id="copyright">2019 Margarita Grill. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

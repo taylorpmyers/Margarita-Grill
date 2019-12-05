@@ -1,0 +1,358 @@
+/* Green - #C2CD43*/
+/* Blue - #01ABC0*/
+html {
+    scroll-behavior: smooth;
+    overflow-y: smooth;
+}
+body {
+    line-height: 1;
+    font-family: 'Raleway', sans-serif;
+}
+
+.scroll {
+    padding-top: 55px;
+}
+
+.nav-colored {
+    background: #01ABC0;
+}
+
+.nav-transparent {
+    background: transparent;
+}
+
+#nav #brand {
+    font-size: 1.5em;
+    float: none;
+    padding: 30px 15px 0px 15px;
+    line-height: 10px;
+    font-family: 'Lobster', cursive;
+    color: #fff;
+}
+
+#nav {
+    color: #fff;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+#nav a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 30px 20px 0px 20px;
+    line-height: 10px;
+    height: 40px;
+    float: right;
+}
+
+#nav a:hover {
+    color: #C2CD43;
+    cursor: pointer;
+}
+
+#bars {
+    display: none;
+    cursor: pointer;
+    float: right;
+    margin-right: 12px;
+    margin-top: 17px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 4px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+#landing {
+    height: 100vh;
+    overflow: auto;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../imgs/background.jpeg) center bottom / cover no-repeat fixed;
+}
+
+#landingText {
+    text-align: center;
+}
+
+#landingText h1 {
+    font-size: 3rem;
+    line-height: 48px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    font-family: Lobster, cursive;
+    margin-top: 40vh;
+    animation: slideRight 1s ease 0s 1 normal forwards running;
+}
+
+#landingText h3 {
+    font-size: 1.5rem;
+    line-height: 48px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    animation: slideLeft 1s ease 0s 1 normal forwards running;
+}
+
+#hours {
+    width: 70%;
+    text-align: center;
+    margin: 50px auto 0px;
+}
+
+#hours h1 {
+    font-size: 2.25rem;
+    color: rgb(194, 205, 67);
+    font-family: Lobster, cursive;
+}
+
+#hours h3 {
+    font-size: 1.5rem;
+    color: rgb(194, 205, 67);
+    margin: 30px;
+}
+
+#hours p {
+    padding-top: 30px;
+    color: rgb(1, 171, 192);
+    font-size: 1.5rem;
+    margin: 30px;
+    border-top: 2px solid rgb(194, 205, 67);
+}
+
+#map {
+    text-align: center;
+    clear: both;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://arteagas.com/wp-content/uploads/2017/11/Arteagas-Mexican-Grocery-Store-Background.jpg) center bottom / cover no-repeat fixed;
+    padding: 50px 30px 30px;
+}
+
+#map h1 {
+    font-size: 2.25rem;
+    color: rgb(194, 205, 67);
+    font-family: Lobster, cursive;
+    margin: 30px;
+}
+
+#map p {
+    color: rgb(1, 171, 192);
+    font-size: 1.25rem;
+    margin: 30px;
+}
+
+.map-responsive {
+    padding-bottom: 36.25%;
+    position: relative;
+    height: 0px;
+    max-width: 70%;
+    overflow: hidden;
+    margin: 0px auto;
+}
+
+.map-responsive iframe {
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+#menu {
+    width: 100%;
+    line-height: 40px;
+}
+
+#menuHolder {
+    width: 70%;
+    margin: 30px auto;
+}
+
+#menuTitle {
+    width: 70%;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: "Titillium Web", sans-serif;
+    text-transform: uppercase;
+    margin: 20px auto;
+}
+
+.menuLeft {
+    width: 45%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.menuRight {
+    width: 45%;
+    float: right;
+}
+
+.menuGroup {
+    display: inline-block;
+    width: 100%;
+    min-width: 300px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 16px 0px, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px;
+    background: white;
+    padding: 20px;
+}
+
+.menuLabel {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family: "Titillium Web", sans-serif;
+}
+
+.menuDescription {
+    line-height: 20px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.item {
+    font-size: 1.25rem;
+    text-align: left;
+    display: inline;
+    text-transform: uppercase;
+}
+
+.price {
+    font-size: 1.25rem;
+    float: right;
+}
+
+.description {
+    line-height: 20px;
+}
+
+footer {
+    clear: both;
+    background: rgb(1, 171, 192);
+}
+
+footer p {
+    top: 50%;
+    width: 33%;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+footer img {
+    display: inline-block;
+    width: 33%;
+    height: auto;
+    margin: 0px auto;
+}
+
+#copyright {
+    width: 32%;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 800px) {
+    .displayNone {
+        visibility: hidden;
+        transition: opacity 1s ease-out;
+        opacity: 0;
+    }
+
+    .displayBlock {
+        visibility: visible;
+        transition: opacity 1s ease-in;
+        opacity: 1;
+    }
+
+    #nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    #nav .navItem {
+        text-decoration: none;
+        width: 100%;
+        text-align: center;
+        border: solid white 1px;
+        padding: 10px 0 0 0;
+        background: inherit;
+    }
+
+    #nav a:hover {
+        color: #C2CD43;
+        cursor: pointer;
+    }
+
+    #bars {
+        display: inline-block;
+    }
+
+    .map-responsive {
+        max-width: 100%;
+        padding-bottom: 56.25%;
+    }
+
+    #menuHolder {
+        width: 90%;
+    }
+
+    .menuLeft,
+    .menuRight {
+        float: none;
+        width: 100%;
+    }
+
+    .menuGroup {
+        display: block;
+        width: 90%;
+        min-width: 300px;
+        box-sizing: border-box;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 16px 0px, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px;
+        background: white;
+        padding: 20px;
+        margin: 10px auto;
+    }
+
+    footer p {
+        display: block;
+        width: auto;
+        text-align: center;
+    }
+
+    footer img {
+        display: block;
+        width: 300px;
+        height: auto;
+        margin: 0px auto;
+    }
+
+    #copyright {
+        display: block;
+        width: auto;
+    }
+}
